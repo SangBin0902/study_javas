@@ -62,6 +62,16 @@ public class Main {
             System.out.println("");
         }*/
 
+        int j = 0;
+        for (HashMap<String, String> question : questions) {
+            String munje = question.get("question");
+            String bogi = question.get("choices");
+            System.out.println(munje);
+            System.out.println(bogi);
+            System.out.println("-정답 : " + userResponses.get(j));
+            j++;
+        }
+
         int totalScore = 0;
         int userScore = 0;
         int i = 0;
